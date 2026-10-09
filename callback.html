@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<title>Connected – Forkcast</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="index.html"><img src="logo.svg" alt="Forkcast" width="110" height="22"></a>
+</div></header>
+<main>
+<article class="prose"><div class="wrap">
+  <h1 id="title">Account connected</h1>
+  <p id="lead">Forkcast Publisher received the authorization. Copy the code below and hand it to the publishing setup. It expires after a few minutes and can be used once.</p>
+  <p><code id="code" style="word-break:break-all;font-size:16px;background:var(--mist);padding:12px 14px;border-radius:12px;display:block"></code></p>
+  <p class="updated">This page runs only in your browser. Nothing is stored or sent anywhere.</p>
+</div></article>
+</main>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  var code = q.get('code');
+  var err = q.get('error');
+  if (err) {
+    document.getElementById('title').textContent = 'Authorization not completed';
+    document.getElementById('lead').textContent = 'TikTok returned: ' + err + (q.get('error_description') ? ' (' + q.get('error_description') + ')' : '') + '. Start the connection again.';
+    document.getElementById('code').style.display = 'none';
+  } else if (code) {
+    document.getElementById('code').textContent = code;
+  } else {
+    document.getElementById('title').textContent = 'Nothing to show';
+    document.getElementById('lead').textContent = 'This page is the return address for connecting Forkcast Publisher to a platform account.';
+    document.getElementById('code').style.display = 'none';
+  }
+})();
+</script>
+</body>
+</html>
