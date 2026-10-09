@@ -3,47 +3,83 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Forkcast — four futures, one fork at a time</title>
-<meta name="description" content="Forkcast is a short-form video series that maps four futures for one big question per episode, with sourced facts and the startup ideas each future would need.">
+<title>Forkcast – Four futures, one question</title>
+<meta name="description" content="Forkcast is a short video series that maps four futures for one big question per season, with sourced facts and the startup ideas each future would need.">
+<meta name="theme-color" content="#FFFFFF">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site"><div class="wrap">
-  <a href="index.html"><img src="logo.svg" alt="Forkcast logo"></a>
-  <a class="brand" href="index.html">Forkcast</a>
-  <span class="by">by Tomorrowly</span>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="index.html"><img src="logo.svg" alt="Forkcast" width="110" height="22"></a>
+  <nav aria-label="Main">
+    <a href="index.html#how">How it works</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
 </div></header>
-<main><div class="wrap">
-<h1>Four futures, one fork at a time.</h1>
-<p class="lead">Forkcast is a short-form video series. Each season takes one big question about the future — food, cities, work, energy, health — and maps four distinct futures for it.</p>
+<main>
+<section class="hero"><div class="wrap">
+  <div>
+    <h1>Four futures.<br>One question.</h1>
+    <p>Forkcast is a short video series about the future. Each season takes one big question and maps four ways it could turn out.</p>
+  </div>
+  <figure class="matrix" aria-label="The four futures of a season">
+    <div class="matrix-grid" role="group" aria-label="Pick a future">
+      <button type="button" aria-pressed="false" data-note="The second force takes off, the first stalls. Often the most surprising world."><strong>Future A</strong>First weak, second strong</button>
+      <button type="button" aria-pressed="true" data-note="Both forces push hard. Usually the boldest world of the season."><strong>Future B</strong>Both drivers strong</button>
+      <button type="button" aria-pressed="false" data-note="Neither force takes off. Closest to today, but rarely unchanged."><strong>Future C</strong>Both drivers weak</button>
+      <button type="button" aria-pressed="false" data-note="The first force wins, the second stalls. The world tilts one way."><strong>Future D</strong>First strong, second weak</button>
+    </div>
+    <figcaption class="matrix-note" aria-live="polite">Both forces push hard. Usually the boldest world of the season.</figcaption>
+  </figure>
+</div></section>
 
-<div class="quadrants" aria-hidden="true">
-  <div class="q1">Future 1</div><div class="q2">Future 2</div>
-  <div class="q3">Future 3</div><div class="q4">Future 4</div>
-</div>
+<section class="band mist" id="how"><div class="wrap">
+  <h2>How an episode works</h2>
+  <ol class="steps">
+    <li><h3>The question</h3><p>One big question about food, cities, work, energy or health.</p></li>
+    <li><h3>Two drivers</h3><p>Two real, sourced forces that will shape the answer and could go either way.</p></li>
+    <li><h3>The matrix</h3><p>Crossing the two drivers gives four distinct futures.</p></li>
+    <li><h3>Inside one future</h3><p>What everyday life could look like, and what it would take to get there.</p></li>
+    <li><h3>Startup ideas</h3><p>The companies that future would need, from research to regulation.</p></li>
+  </ol>
+</div></section>
 
-<h2>How it works</h2>
-<p>We pick two real, sourced drivers of change and combine them in a classic 2&times;2 scenario matrix. Every episode explores one of the four resulting worlds: what daily life could look like, what it would take to get there (research, regulation, the people already working on it), and which startup ideas that future would open up.</p>
-<p>Scenarios are not forecasts. Every factual claim is sourced, every speculative element is labeled as a scenario, and AI-generated visuals and voices are disclosed on every platform.</p>
+<section class="band"><div class="wrap">
+  <h2>What you can rely on</h2>
+  <div class="promises">
+    <div><h3>Every fact is sourced</h3><p>Claims come with a source. Anything we cannot back up does not make it into an episode.</p></div>
+    <div><h3>Scenarios, not forecasts</h3><p>We never claim to know what will happen. We show what would have to be true for each future.</p></div>
+    <div><h3>AI is labeled</h3><p>Visuals and voices are partly AI-generated, and we say so on every platform.</p></div>
+  </div>
+</div></section>
 
-<h2>Where to watch</h2>
-<p>Forkcast publishes on TikTok, YouTube and Instagram. Channel links follow at launch.</p>
-
-<h2>Forkcast Publisher</h2>
-<p>Forkcast Publisher is our internal publishing tool. It uploads finished Forkcast episodes to Forkcast's own social media accounts after a human has approved each season. It is not offered to other users and does not access anyone else's account. Details are in our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
-
-<h2>Contact</h2>
-<p><a href="mailto:tomorrowly.studio@gmail.com">tomorrowly.studio@gmail.com</a></p>
-</div></main>
-<footer class="site"><div class="wrap">
-  <nav>
-    <a href="index.html">Home</a>
+<section class="band mist closing"><div class="wrap">
+  <h2>Coming soon</h2>
+  <p>Forkcast launches on TikTok, YouTube and Instagram. Episodes are published by Forkcast Publisher, our internal tool, after a person has approved each season.</p>
+</div></section>
+</main>
+<footer class="site-foot"><div class="wrap">
+  <p>Forkcast is made by Tomorrowly. Contact: <a href="mailto:tomorrowly.studio@gmail.com">tomorrowly.studio@gmail.com</a></p>
+  <nav aria-label="Legal">
     <a href="privacy.html">Privacy Policy</a>
     <a href="terms.html">Terms of Service</a>
-    <a href="impressum.html">Legal Notice / Impressum</a>
+    <a href="impressum.html">Impressum</a>
   </nav>
-  <div>&copy; 2026 Tomorrowly &middot; <a href="mailto:tomorrowly.studio@gmail.com">tomorrowly.studio@gmail.com</a></div>
 </div></footer>
+<script>
+(function () {
+  var grid = document.querySelector('.matrix-grid');
+  if (!grid) return;
+  var note = document.querySelector('.matrix-note');
+  grid.addEventListener('click', function (e) {
+    var btn = e.target.closest('button');
+    if (!btn) return;
+    grid.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+    note.textContent = btn.dataset.note;
+  });
+})();
+</script>
 </body>
 </html>
